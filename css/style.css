@@ -7,7 +7,11 @@ body {
 }
 
 .vissualy-hidden {
-
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
 }
 
 .container {
@@ -30,9 +34,9 @@ body {
 
 .logo {
 	float: left;
+	margin: 0;
 	margin-right: 164px;
 	margin-top: 26px;
-	margin: 0;
 	width: 40px;
 	height: 14px;
 }
@@ -83,7 +87,11 @@ body {
 }
 
 .main-nav__list--closed {
-
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
 }
 
 .main-nav__toggle {
