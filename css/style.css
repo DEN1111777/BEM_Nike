@@ -1,0 +1,94 @@
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	background-image: url(..//img/main-bg.png),
+          linear-gradient(to right, rgb(102, 61, 151), rgb(172, 113, 175));
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.vissualy-hidden {
+
+}
+
+.container {
+	margin: 0 auto;
+	width: 750px;
+}
+
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.btn {
+	display: inline-block;
+	background: none;
+	border: none;
+	vertical-align: top;
+}
+
+.logo {
+	float: left;
+	margin-right: 164px;
+	margin-top: 26px;
+	margin: 0;
+	width: 40px;
+	height: 14px;
+}
+
+.categories-nav {
+	float: left;
+	margin: 0;
+	margin-top: 30px;
+	padding: 0;
+	list-style: none;
+}
+
+
+.categories-nav__item {
+	position: relative;
+	display: inline-block;
+	vertical-align: top; /*можно любое главное, чтоб было прописано*/
+	margin-right: 48px;
+}
+
+.categories-nav__item--active::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1px;
+	background-color: #ffffff;
+}
+
+.categories-nav__link {
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.2;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	vertical-align: top;
+}
+
+.categories-nav__item:last-child {
+	margin-right: 0;
+}
+
+.main-nav {
+	float: right;
+	margin-top: 34px;
+}
+
+.main-nav__list--closed {
+
+}
+
+.main-nav__toggle {
+	width: 22px;
+	height: 13px;
+	font-size: 0;
+	background-image: url(../img/btn_menu.png);
+}

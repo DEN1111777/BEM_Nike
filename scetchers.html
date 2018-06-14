@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BEM Nike</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="main-header">
+		<div class="container clearfix">
+			<p class="logo">
+				<a href="index.html">
+					<img src="img/logo.png" alt="site logo">
+				</a>
+			</p>
+			<ul class="categories-nav">
+				<li class="categories-nav__item">
+					<a href="#" class="categories-nav__link">Lifestyle</a>
+				</li>
+				<li class="categories-nav__item  categories-nav__item--active">
+					<a href="#" class="categories-nav__link">Running</a>
+				</li>
+				<li class="categories-nav__item">
+					<a href="#" class="categories-nav__link">Football</a>
+				</li>
+				<li class="categories-nav__item">
+					<a href="#" class="categories-nav__link">Scatebording</a>
+				</li>
+			</ul>
+			<nav class="main-nav">
+				<button type="button" class="btn  main-nav__toggle">Open/close menu</button>
+				<ul class="main-nav__list main-nav__list--closed">
+					<li class="main-nav__item">
+						<a href="index.html" class="main-nav__link">Main page</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<h1 class="visually-hidden">Huarache from running categori</h1>
+			<section class="catalog">
+				<article class="catalog__item">
+					<button class="btn  btn--close" type="button">Close</button>
+					<div class="column column--right">
+						<article class="gallery">
+							<p class="gallery__image"><img src="" alt="Huarache"></p>
+							<ul class="controls">
+								<li class="controls__item">
+									<button class="controls__btn" type="button">
+										<img src="" alt="huaracha side">
+									</button>
+								</li>
+								<li class="controls__item">
+									<button class="controls__btn" type="button">
+										<img src="" alt="huaracha pair">
+									</button>
+								</li>
+								<li class="controls__item">
+									<button type="button" class="controls__btn">
+										<img src="" alt="huaracha back">
+									</button>
+								</li>
+							</ul>
+							<button class="gallery__btn" type="button">Zoom</button>
+						</article>
+					</div>
+					<div class="column column--right">
+						<p class="label">New</p>
+						<p class="catalog__text">The Runnung has just began</p>
+						<div class="catalog__wrapper">
+							<h2 class="catalog__heading">Huarache</h2>
+							<ul class="rating">
+								<li class="rating__item">1</li>
+								<li class="rating__item">2</li>
+								<li class="rating__item">3</li>
+								<li class="rating__item">4</li>
+								<li class="rating__item">5</li>
+							</ul>
+							<p class="catalog__price">
+								<span>usd</span>
+								<span>200</span>
+							</p>
+							<p class="catalog__text"></p>
+							<ul class="">
+								<li><button type="button">7</button></li>
+								<li><button type="button">8</button></li>
+								<li><button type="button">9</button></li>
+								<li><button type="button">10</button></li>
+								<li><button type="button">11</button></li>
+							</ul>
+							<form action="">
+								<input type="hidden">
+								<input type="hidden">
+								<button type="submit">Add to card</button>
+							</form>
+							<form action="">
+								<input type="hidden">
+								<input type="hidden">
+								<button type="submit">Wishlist</button>
+							</form>
+						</div>
+					</div>
+				</article>
+			</section>
+		</div>
+	</main>
+	
+</body>
+</html>
