@@ -6,6 +6,11 @@ body {
 	background-size: cover;
 }
 
+img {
+	width: 100%;
+	height: auto;
+}
+
 .vissualy-hidden {
 	position: absolute;
 	clip: rect(0 0 0 0);
@@ -27,9 +32,128 @@ body {
 
 .btn {
 	display: inline-block;
+	padding: 0;
 	background: none;
+	font-family: 'Roboto Condensed', Arial, sans-serif;
+	text-transform: uppercase;
 	border: none;
 	vertical-align: top;
+}
+
+.btn--close {
+	position: absolute;
+	top: 9px;
+	right: 11px;
+	width: 15px;
+	height: 15px;
+	font-size: 0;
+	background-image: url(../img/btn_close.png);
+	background-repeat: no-repeat;
+}
+
+.btn--purple {
+	background-color: #a200b8;
+}
+
+.btn--border {
+	border: 1px solid black;
+}
+
+.btn--white-text {
+	color: #ffffff;
+}
+
+.btn--black-text {
+	color: #000000;
+}
+
+.btn--medium {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 118px;
+}
+
+.column--left {
+	float: left;
+}
+
+.column--right {
+	float: right;
+}
+
+.card__column--left {
+	width: 502px;
+	background-color: #f4f4f4;
+	background-image: url(../img/bg-huaracha.png);
+	background-repeat: no-repeat;
+	background-position: 16px 60px;
+}
+
+.card__column--right {
+	box-sizing: border-box;
+	padding: 43px 31px;
+	width: 248px;
+	background-color: #ffffff;
+}
+
+.gallery {
+	position: relative;
+	padding-top: 36px;
+}
+
+.gallery__image {
+	margin: 0 auto;
+	width: 415px;
+	height: 295px;
+}
+
+.gallery__btn--zoom {
+	position: absolute;
+	top: 335px;
+	right: 24px;
+	width: 21px;
+	height: 21px;
+	font-size: 0;
+	background-image: url(../img/btn_zoom.png);
+	background-repeat: no-repeat;
+}
+
+.controls {
+	padding: 0;
+	text-align: center;
+}
+
+.controls__btn {
+	width: 42px;
+	height: 44px;
+}
+
+.list--no-list-style {
+	list-style: none;
+}
+
+.list--inline {
+	padding-left: 0;
+}
+
+.list--inline .list__item {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.label {
+	display: inline-block;
+	padding: 4px 7px;
+	font-size: 14px;
+	line-height: 1.2;
+	color: #ffffff;
+	text-transform: uppercase;
+	vertical-align: top;
+	background-color: #ffa60d;
+}
+
+.main-header {
+	margin-bottom: 60px;
 }
 
 .logo {
@@ -50,14 +174,14 @@ body {
 }
 
 
-.categories-nav__item {
+.categories-nav__list-item {
 	position: relative;
 	display: inline-block;
 	vertical-align: top; /*можно любое главное, чтоб было прописано*/
 	margin-right: 48px;
 }
 
-.categories-nav__item--active::after {
+.categories-nav__list-item--active::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -77,7 +201,7 @@ body {
 	vertical-align: top;
 }
 
-.categories-nav__item:last-child {
+.categories-nav__list-item:last-child {
 	margin-right: 0;
 }
 
@@ -99,4 +223,67 @@ body {
 	height: 13px;
 	font-size: 0;
 	background-image: url(../img/btn_menu.png);
+}
+
+.catalog__list-item {
+	position: relative;
+	box-shadow: 24px 0px 0px -11px rgba(252, 252, 252, 0.5),
+			-24px 0px 0px -11px rgba(252, 252, 252, 0.5),
+			45px 0px 0px -19px rgba(252, 252, 252, 0.5),
+			-45px 0px 0px -19px rgba(252, 252, 252, 0.5);
+}
+
+.catalog__text {
+	font-family: 'Roboto Condensed', Arial, sans-serif;
+	font-size: 24px;
+	line-height: 1.2;
+}
+
+.catalog__text--black{
+	color: #000000;
+}
+
+.catalog__text--light-blue{
+	color: #5e4fff;
+}
+
+.catalog__text--uppercase {
+	text-transform: uppercase;
+}
+
+.rating__name {
+	display: inline-block;
+	font-family: 'Roboto Condensed', Arial, sans-serif;
+	font-size: 12px;
+	line-height: 1.2;
+	color: #000000;
+	vertical-align: top;
+}
+
+.rating--inline .rating__name {
+	margin-right: 16px;
+}
+
+.rating__stars {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.parameter-buttons__btn {
+	box-sizing: border-box;
+	margin-right: 24px;
+	width: 24px;
+	height: 24px;
+	font-family: 'Roboto Condensed', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.2;
+}
+
+.parameter-buttons__btn:last-child{
+	margin-right: 0;
+}
+
+
+.parameter-buttons__btn:checked {
+	border: 1px solid #000000;
 }
