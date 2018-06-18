@@ -20,7 +20,7 @@ img {
 }
 
 .container {
-	margin: 0 auto;
+	margin: 0 auto 50px auto;
 	width: 750px;
 }
 
@@ -52,6 +52,7 @@ img {
 }
 
 .btn--purple {
+	margin-bottom: 4px;
 	background-color: #a200b8;
 }
 
@@ -75,10 +76,12 @@ img {
 
 .column--left {
 	float: left;
+	height: 428px;
 }
 
 .column--right {
 	float: right;
+	height: 428px;
 }
 
 .card__column--left {
@@ -119,11 +122,15 @@ img {
 }
 
 .controls {
+	margin-top: 31px;
 	padding: 0;
 	text-align: center;
 }
 
 .controls__btn {
+	box-sizing: initial;
+	padding-left: 8px;
+	padding-right: 8px;
 	width: 42px;
 	height: 44px;
 }
@@ -143,6 +150,7 @@ img {
 
 .label {
 	display: inline-block;
+	margin: 0;
 	padding: 4px 7px;
 	font-size: 14px;
 	line-height: 1.2;
@@ -153,7 +161,7 @@ img {
 }
 
 .main-header {
-	margin-bottom: 60px;
+	margin-bottom: 55px;
 }
 
 .logo {
@@ -234,6 +242,8 @@ img {
 }
 
 .catalog__text {
+	margin-top: 7px;
+	margin-bottom: 9px;
 	font-family: 'Roboto Condensed', Arial, sans-serif;
 	font-size: 24px;
 	line-height: 1.2;
@@ -252,6 +262,7 @@ img {
 }
 
 .rating__name {
+	margin-top: 0;
 	display: inline-block;
 	font-family: 'Roboto Condensed', Arial, sans-serif;
 	font-size: 12px;
@@ -265,7 +276,20 @@ img {
 }
 
 .rating__stars {
+	margin: 0;
 	display: inline-block;
+	vertical-align: top;
+}
+
+.catalog__price {
+	/*display: inline-block;*/
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Condensed', Arial, sans-serif;
+	font-size: 22px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: #000000;
 	vertical-align: top;
 }
 
